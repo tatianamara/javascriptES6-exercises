@@ -154,3 +154,17 @@ const user = {
     city: 'Rio do Sul',
 };
 ```
+
+## Exercises: Module 02  
+**1) Create a file called ```functions.js``` with the following content:**
+```javascript
+export const age = 23;
+export default class User {
+ static info() {
+ console.log('Testing');
+ }
+}
+```
+**1.1 Now in your main file, import only the User class renaming it to User Class and call the ```info ()``` function.**  
+**1.2 In your main file, import the age variable and display it on screen.**  
+**1.3 In your main file import both the class and the age variable and rename the age variable for ```UserAge```.**
