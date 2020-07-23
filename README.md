@@ -23,16 +23,16 @@ const usuarios = [
  { nome: 'Lucas', idade: 30, empresa: 'Facebook' },
 ];
 ```
-**2.1 Using the ```map```**
+**2.1 Using the ```map```**  
 Create a variable that contains all ages of users: [23, 15, 30]
 
-**Using the ```filter```**
+**Using the ```filter```**  
 Create a variable that has only users who work at Rocketseat and over 18 years old: [{name: 'Diego', age: 23, company: 'Rocketseat'}]
 
-**2.3 Using ```find```**
+**2.3 Using ```find```**  
 Create a variable that looks for a user who works for the Google company: ```undefined```
 
-**2.4 Joining operations**
+**2.4 Joining operations**  
 Multiply the age of all users by two and then perform a filter on users who have maximum 50 years:
 
 **3) Convert the functions to the following code snippets in Arrow Functions:**
@@ -76,7 +76,7 @@ const promise = function() {
    }
 ```
 
-**4) Destructuring Exercises**
+**4) Destructuring Exercises**  
 
 **Simple destructuring**
 
@@ -90,9 +90,9 @@ onst company = {
     }
 };
 ```
-Use the destructuring to transform the properties name, city and state into variables
+Use the destructuring to transform the properties name, city and state into variables  
 
-**Destructuring in parameters**
+**Destructuring in parameters**  
 
 In the following function:
 ```javascript
@@ -101,13 +101,13 @@ function Info(user) {
 }
 Info({ name: 'Diego', age: 23 })
 ```
-Use the destructuring in the function parameters to search for the user's name and age separately and the function can only return:
+Use the destructuring in the function parameters to search for the user's name and age separately and the function can only return:  
 ```javascript
 return `${name} tem ${age} anos.`;
 ```
-**5) Using the rest / spread operator (...) perform the following operations:**
+**5) Using the rest / spread operator (...) perform the following operations:**  
 
-**5.1 Rest**
+**5.1 Rest**  
 
 From the array: const ```arr = [1, 2, 3, 4, 5, 6]``` , define a variable x that receives the first
 position of the vector and another variable y that receives all the rest of the data.
@@ -120,7 +120,7 @@ Create a function that takes numerous parameters and returns the sum of them all
 console.log(sum(1, 2, 3, 4, 5, 6)); // 21
 console.log(sum(1, 2)); // 3
 ```
-**5.2 Spread**
+**5.2 Spread**  
 
 From the object and using the spread operator:
 
@@ -135,16 +135,16 @@ const user = {
     }
 };
 ```
-Create a user2 variable that contains all user data but named Gabriel.
-Create a user3 variable that contains all user data but with city Lontras.
+Create a user2 variable that contains all user data but named Gabriel.  
+Create a user3 variable that contains all user data but with city Lontras.  
 
-**6) Convert the following code snippet using Template Literals:**
+**6) Convert the following code snippet using Template Literals:**  
 ```javascript
 const user = 'Diego';
 const age = 23;
 console.log('The user ' + user + ' is ' + age + ' years old');
 ```
-**7) Use Object Short Syntax on the following object:**
+**7) Use Object Short Syntax on the following object:**  
 ```javascript
 const name = 'Diego';
 const age = 23;
