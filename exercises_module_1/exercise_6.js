@@ -1,4 +1,4 @@
-//Exercise 7
+//Exercise 6
 //Convert the following code snippet using Template Literals:
 
 const user = 'Diego';
