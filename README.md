@@ -2,7 +2,7 @@
 
 ## Exercises: Module 01
 
-**1) To test your knowledge with classes, create a class with the name "Admin", that class must extend a second class called "User".  
+**1) To test your knowledge with classes, create a class with the name "Admin", that class must extend a second class called "User".**  
 
 User class must receive two parameters in the constructor method, email, and password set then to other properties in class. The "Admin" class does not receive any parameters, but must pass the parent class email and password parameters and mark an "admin" property as ´´´true´´´ in the class.**
 
