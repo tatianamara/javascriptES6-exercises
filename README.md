@@ -168,3 +168,62 @@ export default class User {
 **1.1 Now in your main file, import only the User class renaming it to User Class and call the ```info ()``` function.**  
 **1.2 In your main file, import the age variable and display it on screen.**  
 **1.3 In your main file import both the class and the age variable and rename the age variable for ```UserAge```.**
+
+## Exercises: Module 03  
+Transform the following code snippets using asynchronous / wait:
+```javascript
+// Delay function triggers .then after 1s
+const delay = () => new Promise(resolve => setTimeout(resolve, 1000));
+function onePerSecond() {
+    delay().then(() => {
+        console.log('1s');
+        delay().then(() => {
+            console.log('2s');
+            delay().then(() => {
+                console.log('3s');
+            });
+        })
+    });
+}
+onePerSecond();
+```  
+```javascript
+function getUserFromGithub(user) {
+    axios.get(`https://api.github.com/users/${user}`)
+        .then(response => {
+            console.log(response.data);
+        })
+        .catch(err => {
+            console.log('User does not exist');
+        })
+}
+getUserFromGithub('tatiana.mara');
+getUserFromGithub('tatiana124123');
+```  
+```javascript
+class Github {
+    static getRepositories(repo) {
+        axios.get(`https://api.github.com/repos/${repo}`)
+            .then(response => {
+                console.log(response.data);
+            })
+            .catch(err => {
+                console.log('Repository does not exist');
+            })
+    }
+}
+Github.getRepositories('rocketseat/rocketseat.com.br');
+Github.getRepositories('rocketseat/dslkvmskv');
+```  
+```javascript
+const searchUser = user => {
+    axios.get(`https://api.github.com/users/${user}`)
+        .then(response => {
+            console.log(response.data);
+        })
+        .catch(err => {
+            console.log('User does not exist');
+        });
+}
+searchUser('tatiana.mara');
+```
